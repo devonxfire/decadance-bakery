@@ -1,0 +1,447 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Poppins:wght@200;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    padding: 0px 20px;  
+    
+    
+           
+}
+
+
+
+.img-logo {
+    width: 100%;
+    
+    
+}
+
+
+
+.menu-list {
+    
+    display: flex;
+    list-style: none;
+    transition: 0.7s;
+   
+}
+
+.menu-item {
+    padding: 10px 40px;
+    font-size: 1.25rem;
+   
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+        transition: all .2s ease-in-out;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #666;
+  
+    
+}
+
+.menu-item a:hover {
+    color: #eca62e;
+    
+ 
+}
+
+
+
+.hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.534)), url("../images/db-hero.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    
+    
+
+}
+
+.large-heading {
+    color: #fff;
+    font-size: 3rem;
+    /* margin-bottom: 200px; */
+    padding-bottom: 150px;
+}
+
+
+.btn {
+    padding: 20px 50px;
+   
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: #eca62e 2px solid;
+    color: #fff;    
+    font-weight: lighter;
+    letter-spacing: 0.25em;
+    cursor: pointer;
+    
+    
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn a:hover {
+    color: #eca62e;
+}
+
+.btn:hover{
+  
+    color: #eca62e;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    
+}
+
+
+.about-container {
+        
+      margin-bottom: 60px;
+    background-color: #f6f6f6;
+        ;
+      
+      padding-top: 80px;
+   
+       
+}
+
+
+
+
+.about-text {
+    padding: 50px 130px;
+    line-height: 1.9rem;
+    color: #666;
+    
+   
+}
+
+.portfolio-heading, .about-heading, .contact-heading {
+    font-size: 4rem;
+    text-align: center;
+    color: #666;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 60px 90px;
+    
+}
+
+.portfolio-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;    
+    border-radius: 50%;
+    box-shadow: 0 0 8px;
+    border: 1px #fff solid;
+    
+    
+}
+
+.portfolio-caption {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #666;
+}
+
+.item-text {
+
+    margin-top: 40px;
+    padding: 20px 40px;
+    color: #666;
+    line-height: 1.9rem;
+
+}
+
+
+/* Contact Section */
+
+.contact {
+   
+    padding: 50px;
+    background-color: #f6f6f6;;
+}
+
+.contact-heading {
+    padding-bottom: 40px;
+}
+
+.contact-wrapper {
+max-width: 1170px;
+
+margin-right: auto;
+box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+margin: 50px auto;
+border-radius: 10px;
+
+
+
+
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+  
+}
+
+
+
+.company-info ul, .company-info h3 {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.company-info li {
+    padding-top: 10px;
+   
+    font-size: 0.8rem;
+}
+
+.brand {
+    text-align: center;
+}
+
+.brand span {
+    color: #eca62e;
+}
+
+.company-info {
+    background: #eca62e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form { 
+    background: #f6f6f6;
+    color: #666;
+    padding: 0 40px 40px 40px;
+
+}
+
+
+/* Form Style */
+
+.contact-form form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.contact-form .full {
+    grid-column: 1 / 3;
+}
+
+.contact-form button, .contact-form form input, .contact-form form textarea {
+    width: 100%;
+    padding: 1em;
+}
+
+
+.contact-form button {
+    background: #eca62e;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+ 
+    
+}
+
+.contact-form button:hover {
+    background: #666;
+    color: #fff;
+    transition: background-color 0.5s ease-out;
+}
+
+.contact-form h3 {
+    margin-top: 20px;
+    margin-bottom: 40px; 
+    text-align: center;
+}
+
+.message-sent {
+    background-color: green;
+    color: white;
+    font-size: 1.75rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 25%;
+    margin: 20px auto;
+    padding: 20px 0;
+    box-shadow: #666 5px 5px 10px;
+    display: none;
+    
+}
+
+/* Scroll to top button */
+
+.scroll-to-top {
+
+
+position: fixed;
+bottom: 100px;
+right: 80px;
+border-radius: 50%;
+height: 100px;
+width: 100px;
+background-color: #eca62e;
+color: #fff;
+border: none;
+font-size: 2rem;
+opacity: 80%;
+
+
+}
+
+.scroll-to-top:hover {
+    background-color: #666;
+    transition: all .2s ease-in-out;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+
+#main-footer {
+    text-align: center;
+    color: #fff;
+    background-color: #666;
+    font-size: 12px;
+    padding: 12px;
+  
+}
+
+
+
+
+
+
+/* Media queries */
+
+
+/* SMALL SCREENS */
+
+@media all and (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        
+        
+    }
+
+    .menu-item a {
+        font-size: 1rem;
+        
+    }
+
+    .large-heading {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 15px 25px;
+        font-size: .8rem;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: #eca62e 2px solid;
+        color: #fff;    
+        font-weight: lighter;
+        letter-spacing: 0.25em;
+        cursor: pointer;
+        
+        
+    }
+
+    .portfolio-heading, .about-heading {
+        font-size: 1.7rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* LARGE SCREENS */
+
+@media(min-width: 700px) {
+ .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+ }   
+
+ .company-info {
+    border-top-right-radius: 0;
+
+ }
+
+ .company-info h3, .company-info ul, .brand {
+    text-align: left;
+ }
+
+
+}
